@@ -20,17 +20,27 @@ use risc0_zkvm::serde::{from_slice, to_vec};
 use risc0_zkvm::Prover;
 
 fn main() {
-    let mut file =
-        std::fs::File::open("res/example.json").expect("Example file should be accessible");
-    let mut data = String::new();
-    file.read_to_string(&mut data)
+    // Load data 1
+    let mut file1 =
+        std::fs::File::open("res/example1.json").expect("Example file should be accessible");
+    let mut data1 = String::new();
+    file.read_to_string(&mut data1)
+        .expect("Should not have I/O errors");
+
+    // Load data 2
+    let mut file2 =
+        std::fs::File::open("res/example2.json").expect("Example file should be accessible");
+    let mut data2 = String::new();
+    file2.read_to_string(&mut data2)
         .expect("Should not have I/O errors");
 
     // Make the prover.
     let mut prover = Prover::new(SEARCH_JSON_ELF, SEARCH_JSON_ID)
         .expect("Prover should be constructed from matching method code & ID");
 
-    prover.add_input_u32_slice(&to_vec(&data).expect("should be serializable"));
+    // Add both json data
+    prover.add_input_u32_slice(&to_vec(&data1).expect("should be serializable"));
+    prover.add_input_u32_slice(&to_vec(&data2).expect("should be serializable"));
 
     // Run prover & generate receipt
     let receipt = prover.run().expect("Code should be provable");
@@ -42,5 +52,5 @@ fn main() {
     let journal = &receipt.journal;
     let outputs: Outputs = from_slice(&journal).expect("Journal should contain an Outputs object");
 
-    println!("\nThe JSON file with hash\n  {}\nprovably contains a field 'critical_data' with value {}\n", outputs.hash, outputs.data);
+    println!("\nThe following JSON files agree on the value of 'critical_data':\n{}\n{}\n", outputs.hash1, outputs.hash2);
 }

@@ -1,0 +1,13 @@
+/Users/kiva/rjson/methods/guest/target/debug/deps/risc0_zkvm-d9f1a0b68a510da9.rmeta: /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/lib.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/control_id.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/receipt.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/mod.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/deserializer.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/err.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/serializer.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/sha.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/../README.md
+
+/Users/kiva/rjson/methods/guest/target/debug/deps/risc0_zkvm-d9f1a0b68a510da9.d: /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/lib.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/control_id.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/receipt.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/mod.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/deserializer.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/err.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/serializer.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/sha.rs /Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/../README.md
+
+/Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/lib.rs:
+/Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/control_id.rs:
+/Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/receipt.rs:
+/Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/mod.rs:
+/Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/deserializer.rs:
+/Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/err.rs:
+/Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/serde/serializer.rs:
+/Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/sha.rs:
+/Users/kiva/.cargo/registry/src/github.com-1ecc6299db9ec823/risc0-zkvm-0.12.0/src/../README.md:

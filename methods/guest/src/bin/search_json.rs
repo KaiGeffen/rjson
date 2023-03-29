@@ -21,13 +21,22 @@ use risc0_zkvm::guest::{env, sha};
 risc0_zkvm::guest::entry!(main);
 
 pub fn main() {
-    let data: String = env::read();
-    let sha = sha::digest(&data.as_bytes());
-    let data = parse(&data).unwrap();
-    let proven_val = data["critical_data"].as_u32().unwrap();
+    let data1: String = env::read();
+    let data2: String = env::read();
+
+    let sha1 = sha::digest(&data1.as_bytes());
+    let sha2 = sha::digest(&data2.as_bytes());
+
+    let data1 = parse(&data1).unwrap();
+    let data2 = parse(&data2).unwrap();
+
+    let proven_val1 = data1["critical_data"].as_u32().unwrap();
+    let proven_val2 = data2["critical_data"].as_u32().unwrap();
+
     let out = Outputs {
-        data: proven_val,
-        hash: *sha,
+        hash1: sha1,
+        hash2: sha2,
     };
+
     env::commit(&out);
 }
