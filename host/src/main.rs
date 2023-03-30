@@ -24,7 +24,7 @@ fn main() {
     let mut file1 =
         std::fs::File::open("res/example1.json").expect("Example file should be accessible");
     let mut data1 = String::new();
-    file.read_to_string(&mut data1)
+    file1.read_to_string(&mut data1)
         .expect("Should not have I/O errors");
 
     // Load data 2

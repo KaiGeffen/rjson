@@ -33,9 +33,13 @@ pub fn main() {
     let proven_val1 = data1["critical_data"].as_u32().unwrap();
     let proven_val2 = data2["critical_data"].as_u32().unwrap();
 
+    if proven_val1 != proven_val2 {
+        panic!("Values of critical_data do not agree!");
+    }
+
     let out = Outputs {
-        hash1: sha1,
-        hash2: sha2,
+        hash1: *sha1,
+        hash2: *sha2,
     };
 
     env::commit(&out);
