@@ -7,6 +7,5 @@ edition = "2021"
 json = "0.12"
 json-core = { path = "../core" }
 methods = { path = "../methods" }
-risc0-zkp = "0.12"
-risc0-zkvm = "0.12"
+risc0-zkvm = "0.14"
 serde = "1.0"
