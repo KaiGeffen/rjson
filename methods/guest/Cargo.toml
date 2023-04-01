@@ -1,14 +1,14 @@
 [package]
 name = "guest"
-version = "0.12.0"
+version = "0.14.0"
 edition = "2021"
 
 [workspace]
 
 [build-dependencies]
-risc0-build = "0.12"
+risc0-build = "0.14"
 
 [dependencies]
 json-core = { path = "../../core" }
-risc0-zkvm = { version = "0.12", default-features = false, features = [ "std" ] }
+risc0-zkvm = { version = "0.14", default-features = false, features = [ "std" ] }
 json = "0.12"
